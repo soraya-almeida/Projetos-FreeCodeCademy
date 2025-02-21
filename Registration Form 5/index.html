@@ -1,0 +1,91 @@
+<DOCTYPE! html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição breve do site para SEO">
+      <title>Otaku Survey Form</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="separando">
+      <h1 id="title">Otaku Survey Form</h1>
+      <p id="description"><em>Compartilhe seus pensamentos e preferências sobre animes e mangás com nossa rápida Pesquisa Otaku!</em></p>
+      </div>
+      
+      <form id="survey-form">
+        <br>
+        <br>
+        <label id="name-label" for="name">Nome:
+        <input id="name" type="text" placeholder="Insira seu nome" name="name" required >
+        </label>
+        <label id="email-label" for="eamil">Email:
+        <input id="email" type="email" placeholder="Insira seu email" name="email" required>
+        </label>
+        <label id="number-label" for="number">Idade:
+        <input id="number" type="number" min="1" max="100" placeholder="Idade" name="number" required>
+        </label>
+        <label for="dropdown">Você se identifica com qual desses animes?</label>
+        <select id="dropdown" required>
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="opcao1">Naruto</option>
+          <option value="opcao2">Death Note</option>
+          <option value="opcao3">Steins;Gate</option>
+          <option value="opcao4">One Punch Man</option>
+          <option value="opcao5">Kimi no Na wa</option>
+        </select>
+        <p>Você prefere:</p>
+        <div class="conteiner">
+        <input type="radio" id="op1" name="op" value="op1" required>
+        <label for="op1">Assistir pelo celular</label>
+        </div>
+        <div class="conteiner">
+        <input type="radio" id="op2" name="op" value="op2">
+        <label>Assistir pelo pc</label>
+        </div>
+        <div class="conteiner">
+        <input type="radio" id="op3" name="op" value="op3">
+        <label for="op3">Assistir pela TV</label>
+        </div>
+
+        <br>
+        
+        <p>Quais desses canais você tem acesso?
+          <br>
+        <input type="checkbox" id="crunchyroll" name="plataforma" value="crunchyroll">
+        <label for="crunchyroll">Crunchyroll</label>
+        <br>
+        <input type="checkbox" id="funimation" name="plataforma" value="funimation">
+        <label for="funimation">Funimation</label>
+        <br>
+        <input type="checkbox" id="netflix" name="plataforma" value="netflix">
+        <label for="netflix">Netflix</label>
+        <br>
+        <input type="checkbox" id="amazonprimevideo" name="plataforma" value="amazonprimevideo">
+        <label for="amazonprimevideo">Amazon Prime Video</label>
+        <br>
+        <input type="checkbox" id="hbomax" name="plataforma" value="hbomax">
+        <label for="hbomax">HBO Max</label>
+        <br>
+        <input type="checkbox" id="youtube" name="plataforma" value="youtube">
+        <label for="youtube">YouTube</label>
+        <br>
+        <br>
+        <label for="comentario" class="comentar">Comentários adicionais:</label>
+        <div>
+        <textarea id="comentario" placeholder="Escreva seu comentário aqui" name="comentarios" rown="6" cols="50" required></textarea>
+        </div>
+        <br>
+        <br>
+        <div class="button">
+        <button type="submit" id="submit" value="enviar">Enviar</button>
+        </div>
+        <br>
+        <br>
+      </form>
+      
+    </body>
+  
+<html>
+
+
